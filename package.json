@@ -1,0 +1,17 @@
+{
+  "name": "gitlabapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "csv-to-array": "^1.0.2",
+    "json2csv": "^3.11.5",
+    "node-gitlab": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
