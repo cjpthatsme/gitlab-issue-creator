@@ -115,7 +115,7 @@ function createIssue(data) {
   client.issues.create({
     id: options.projectId,
     title: data.title,
-    description: data.desc,
+    description: data.description,
     assignee_id: data.assignee,
     milestone_id: data.milestoneId,
     labels: data.labels
