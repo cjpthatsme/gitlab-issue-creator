@@ -95,6 +95,9 @@ There is an example CSV in the CSV folder to help keep the CSV in the required f
 node issues.js -c csv/data.csv
 ```
 
+**Note on Newlines:**
+Carriage returns and linefeeds cannot be processed by the a-csv library. To work around this, you can substitute newlines for 0x0A in the description field. 0x0A will be replaced with newlines in your issue description.
+
 #### -r
 
 This command will retry any failures from the CSV import.
