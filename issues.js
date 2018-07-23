@@ -31,7 +31,7 @@ var json2csv = require('json2csv');
 var fs = require('fs');
 
 var client = gitlab.create({
-  api: 'https://gitlab.com/api/v3',
+  api: 'https://gitlab.com/api/v4',
   privateToken: options.privateToken
 });
 
