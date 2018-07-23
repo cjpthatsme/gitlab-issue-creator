@@ -115,7 +115,7 @@ function createIssue(data) {
   client.issues.create({
     id: options.projectId,
     title: data.title,
-    description: data.description,
+    description: data.description.replace(/0x0A/g, "\r\n"),
     assignee_id: data.assignee,
     milestone_id: data.milestoneId,
     labels: data.labels
