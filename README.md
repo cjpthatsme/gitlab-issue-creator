@@ -104,6 +104,9 @@ node issues.js -r
 
 As the CSV import command runs, there seems to always be failures. I am not 100% sure why but I added this command to help with that. As the importer runs, any failures are put into a new csv called retry.csv. All this command does it load that file and run it back trhough. I have had to run this command 3 times on really big lists. This could be easily automated so it automatically loads the file but I decided that since that would require more validation the csv to be sure that the errors were not caused there, I would just make it a separate command for now.
 
+**Note on Newlines:**
+Carriage returns and linefeeds cannot be processed by the a-csv library. To work around this, you can substitute newlines for 0x0A in the description field. 0x0A will be replaced with newlines in your issue description.
+
 ### Built With
 
 * [node-gitlab](https://www.npmjs.com/package/node-gitlab) by [fengmk2](https://www.npmjs.com/~fengmk2)
